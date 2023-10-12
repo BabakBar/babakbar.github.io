@@ -1,5 +1,25 @@
-  name: Setup Ruby and install gems
-  uses: ruby/setup-ruby@v1
-  with:
-    ruby-version: 3.2.2
-    bundler-cache: true
+name: Build and Deploy Jekyll
+
+on:
+  push:
+    branches:
+      - main  # replace with your default branch name if different
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Setup Ruby and install gems
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.2.2
+        bundler-cache: true
+
+    - name: Build and Deploy
+      uses: helaili/jekyll-action@2.0.1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
