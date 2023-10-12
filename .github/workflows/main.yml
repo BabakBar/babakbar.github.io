@@ -1,4 +1,4 @@
-- name: Setup Ruby and install gems
+  name: Setup Ruby and install gems
   uses: ruby/setup-ruby@v1
   with:
     ruby-version: 3.2.2
