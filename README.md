@@ -1,2 +1,12 @@
-This is my personal portfolio website. Here you can find the code that I used to make my website.
-At this link you can see my experiences and skillset. https://babakbar.github.io/
+# Archived Website
+
+This repo previously hosted my personal website. The website has now been moved to a new domain and platform.
+
+🔗 **Visit the new website here**: [https://babakbarghi.com](https://babakbarghi.com)
+
+## Current Status
+
+- This repository is no longer actively maintained.
+- The GitHub Pages site now redirects to the new domain.
+
+Merci for visiting!
